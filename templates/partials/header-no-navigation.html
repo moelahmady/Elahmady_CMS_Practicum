@@ -1,0 +1,38 @@
+<!--
+  templateType: global_partial
+  label: Header no navigation
+-->
+<header class="header header--no-navigation">
+
+  {# Top header drag and drop area #}
+
+  {% dnd_area "header-top"
+    label="Top header",
+    class="content-wrapper"
+  %}
+  {% end_dnd_area %}
+
+  {# Main header #}
+
+  <div class="header__container content-wrapper">
+
+    {# Logo #}
+
+    <div class="header__logo">
+      {% module "site_modern_logo"
+        path="../../modules/modern-logo",
+        label="Modern Logo"
+        %}
+    </div>
+
+  </div>
+
+  {# Bottom header drag and drop area #}
+
+  {% dnd_area "header-bottom"
+    label="Bottom header",
+    class="content-wrapper"
+  %}
+  {% end_dnd_area %}
+
+</header>
